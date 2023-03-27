@@ -1,11 +1,18 @@
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .header {
   height: 80px;
   background-color: #1c2b35;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 350px;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 nav.header a {
