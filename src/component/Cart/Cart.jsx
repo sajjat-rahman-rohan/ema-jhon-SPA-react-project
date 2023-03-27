@@ -5,7 +5,7 @@ const Cart = ({ cart }) => {
   // const cart = props.cart; // option 1
   // const {cart} = props; // option 2
 
-  console.log(cart);
+  //   console.log(cart);
   let totalPrice = 0;
   let totalShipping = 0;
   let quantity = 0;
@@ -16,7 +16,7 @@ const Cart = ({ cart }) => {
     // }
     // product.quantity = product.quantity || 1;
 
-    totalPrice = product.price + totalPrice;
+    totalPrice = product.price + totalPrice * product.quantity;
     totalShipping = product.shipping + totalShipping;
     quantity = product.quantity + quantity;
   }
